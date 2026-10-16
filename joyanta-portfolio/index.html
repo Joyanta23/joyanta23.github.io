@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Research portfolio of Joyanta Roy Chowdhury, mechanical engineering graduate, KUET.">
+<title>Joyanta Roy Chowdhury</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: plain white single column; each project is a short paragraph followed by its slides */
+:root{
+  --bg:#ffffff; --ink:#1d1d1f; --muted:#666a70; --line:#e3e4e6; --accent:#1f4e8c; --soft:#f3f4f6;
+  --display:"Source Serif 4",Georgia,serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
+.wrap{max-width:800px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.25}
+p{margin:0}
+header.wrap{padding-block:48px 8px;display:grid;gap:4px}
+h1{font-size:clamp(1.9rem,5vw,2.5rem)}
+header p{color:var(--muted)}
+main.wrap{display:grid;gap:56px;padding-block:32px 72px}
+section{display:grid;gap:28px}
+h2{font-size:1.5rem;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.project{display:grid;gap:14px}
+.project + .project{padding-top:36px;border-top:1px solid var(--line)}
+h3{font-size:1.2rem}
+.meta{font-size:.9rem;color:var(--muted)}
+.meta a{color:var(--accent);text-underline-offset:3px}
+.text{max-width:68ch}
+
+.viewer{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:6px}
+.viewer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.stage{position:relative;background:#fff;aspect-ratio:16/9;max-width:100%}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;border-top:1px solid var(--line);background:var(--soft);flex-wrap:wrap}
+.bar .title{font-size:.85rem;color:var(--muted)}
+.ctrls{display:flex;align-items:center;gap:8px}
+.ctrls button{font:600 .85rem var(--sans);background:#fff;color:var(--accent);border:1px solid var(--line);border-radius:6px;padding:5px 14px;cursor:pointer}
+.ctrls button:hover:not(:disabled){border-color:var(--accent)}
+.ctrls button:disabled{opacity:.4;cursor:default}
+.ctrls button:focus-visible,.thumbs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;min-width:4.5em;text-align:center}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;border-top:1px solid var(--line);scrollbar-width:thin}
+.thumbs button{flex:0 0 auto;padding:0;border:2px solid transparent;border-radius:4px;background:none;cursor:pointer;line-height:0}
+.thumbs button[aria-current="true"]{border-color:var(--accent)}
+.thumbs img{width:96px;height:54px;object-fit:cover;border-radius:2px;background:#fff;border:1px solid var(--line)}
+
+ul.papers{margin:0;padding-left:1.2em;display:grid;gap:12px}
+ul.papers span{display:block;font-size:.9rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Joyanta Roy Chowdhury</h1>
+  <p>B.Sc. in Mechanical Engineering, KUET, Bangladesh</p>
+</header>
+
+<main class="wrap">
+
+<section id="research">
+  <h2>Research</h2>
+
+  <article class="project">
+    <h3>Machine learning for aged titanium alloys</h3>
+    <p class="meta">2026 – present · Supervisor: <a href="https://scholar.google.com/citations?user=gedmLOgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Dr. Md. Ashraful Islam</a></p>
+    <p class="text">In this project I wanted to see if we can predict the electrical resistivity and hardness of aged titanium alloys just from their composition and heat treatment. There was no ready-made dataset, so I collected the data myself from aging curves in published papers using WebPlotDigitizer. In the end I had 836 resistivity points and 568 hardness points. I tried eight different ML models, and ExtraTrees worked best for both properties. The part I found most interesting was that giving the model the measured resistivity as an extra input made the hardness predictions quite a bit better, with the error dropping by around 21%. My supervisor is reviewing the manuscript now.</p>
+    <div class="viewer" data-dir="slides-ti" data-n="8" data-pad="1" data-name="Research overview"></div>
+  </article>
+
+  <article class="project">
+    <h3>Heat transfer around two triangular cylinders in tandem</h3>
+    <p class="meta">2026 – present · Ongoing</p>
+    <p class="text">This is what I'm working on right now. I'm looking at two heated triangular cylinders placed one behind the other in a channel, and how the front one changes the flow and heat transfer for the one behind it. I run 2D transient simulations in ANSYS Fluent and change the apex angle, the gap between the cylinders and the Reynolds number. I first checked my setup against a published single-cylinder case, and the numbers matched well. Some of the cases are still running, so these results are early.</p>
+    <div class="viewer" data-dir="slides-tandem" data-n="8" data-pad="1" data-name="Research review"></div>
+  </article>
+
+  <article class="project">
+    <h3>Laminar flow heat transfer with staggered triangular pin fins</h3>
+    <p class="meta">2024 – 2025 · Undergraduate thesis · Supervisor: Prof. Dr. Md. Shahidul Islam</p>
+    <p class="text">This was my undergraduate thesis at KUET. I simulated laminar airflow through a staggered array of triangular pin fins in ANSYS Fluent, for Reynolds numbers from 200 to 1000, and compared the results with circular, square, hexagonal and rectangular fins from earlier studies. The triangular fins gave the highest heat transfer, but they also caused a larger pressure drop, so there is a trade-off. I presented this work at ICERIE 2025.</p>
+    <div class="viewer" data-dir="slides-thesis" data-n="26" data-pad="2" data-name="Thesis presentation"></div>
+  </article>
+</section>
+
+<section id="papers">
+  <h2>Papers</h2>
+  <p class="meta">International Conference on Engineering Research, Innovation and Education (ICERIE 2025)</p>
+  <ul class="papers">
+    <li>Numerical Study on the Heat Transfer Characteristics for Laminar Flow with Triangular Pin Fin in Arrays<span>Presented at the conference</span></li>
+    <li>Numerical Analysis of Solar Air Heater with Transverse Semi-Hexagonal Ribs<span>Co-author</span></li>
+    <li>Analysis of Fatigue Life for Different Geometries Under Uni-axial Loading Using FEM<span>Co-author</span></li>
+  </ul>
+</section>
+</main>
+
+<script>
+document.querySelectorAll('.viewer').forEach(function(v){
+  var N=+v.dataset.n, pad=+v.dataset.pad, dir=v.dataset.dir, name=v.dataset.name, i=0;
+  v.innerHTML='<div class="stage"><img alt=""></div><div class="bar"><span class="title">'+name+' · '+N+' slides</span><div class="ctrls"><button type="button" class="p" aria-label="Previous slide">Previous</button><span class="count" aria-live="polite"></span><button type="button" class="n" aria-label="Next slide">Next</button></div></div><div class="thumbs" aria-label="All slides"></div>';
+  var img=v.querySelector('.stage img'), count=v.querySelector('.count');
+  var prev=v.querySelector('.p'), next=v.querySelector('.n'), thumbs=v.querySelector('.thumbs');
+  function src(k){return dir+'/s-'+String(k+1).padStart(pad,'0')+'.jpg'}
+  var tb=[];
+  for(var k=0;k<N;k++){
+    var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Slide '+(k+1));
+    var t=document.createElement('img'); t.src=src(k); t.alt=''; t.loading='lazy'; b.appendChild(t);
+    (function(k){b.addEventListener('click',function(){go(k)})})(k);
+    thumbs.appendChild(b); tb.push(b);
+  }
+  function go(k){
+    i=Math.max(0,Math.min(N-1,k));
+    img.src=src(i); img.alt=name+', slide '+(i+1)+' of '+N;
+    count.textContent=(i+1)+' / '+N; prev.disabled=i===0; next.disabled=i===N-1;
+    tb.forEach(function(b,j){b.setAttribute('aria-current',j===i?'true':'false')});
+    var c=tb[i]; thumbs.scrollTo({left:c.offsetLeft-thumbs.clientWidth/2+c.clientWidth/2});
+  }
+  prev.addEventListener('click',function(){go(i-1)});
+  next.addEventListener('click',function(){go(i+1)});
+  v.tabIndex=0;
+  v.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(i+1);e.preventDefault()} if(e.key==='ArrowLeft'){go(i-1);e.preventDefault()}});
+  var x0=null, st=v.querySelector('.stage');
+  st.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  st.addEventListener('touchend',function(e){if(x0===null)return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40)go(i+(dx<0?1:-1)); x0=null});
+  go(0);
+});
+</script>
+</body>
+</html>
