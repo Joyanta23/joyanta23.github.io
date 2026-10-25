@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Joyanta Roy Chowdhury</title>
+  <meta name="description" content="Research by Joyanta Roy Chowdhury: CFD and heat transfer of tandem triangular cylinders, interpretable machine learning for aged titanium alloys, and pin-fin heat transfer.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231f3a5f'/><text x='32' y='43' font-family='Georgia,serif' font-size='32' font-weight='600' fill='white' text-anchor='middle'>JR</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Joyanta Roy Chowdhury</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills &amp; Awards</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div class="container">
+      <h1>Research</h1>
+      <p>Computational fluid dynamics, convective heat transfer, and machine learning for engineering materials</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- Tandem cylinders -->
+      <article class="entry" id="tandem">
+        <div class="entry-head">
+          <h2>Wake Interference and Heat Transfer of Heated Tandem Triangular Cylinders: Effects of Apex Angle, Gap Ratio, and Reynolds Number</h2>
+          <span class="date">2026 – Present</span>
+        </div>
+        <p class="meta">Computational Fluid Dynamics &middot; Convective Heat Transfer</p>
+        <ul>
+          <li>Conducting two-dimensional transient CFD simulations of two heated triangular cylinders arranged in tandem inside a channel, using ANSYS Fluent 2023 R1.</li>
+          <li>Studying the coupled influence of apex angle, cylinder spacing, and Reynolds number on wake behavior, drag, lift, and heat transfer.</li>
+          <li>Established stable periodic simulations and time-averaging workflows for the upstream and downstream Nusselt numbers and force coefficients, supported by mesh- and time-step-independence studies and comparison with a published single-cylinder benchmark.</li>
+        </ul>
+
+        <div class="param-row">
+          <div class="param"><div class="label">Apex angle, β</div><div class="value">30°, 60°, 90°</div></div>
+          <div class="param"><div class="label">Gap ratio, G/B</div><div class="value">1, 3, 5</div></div>
+          <div class="param"><div class="label">Reynolds number, Re</div><div class="value">80 – 160</div></div>
+        </div>
+
+        <div class="figures">
+          <figure>
+            <img src="assets/img/cfd-temperature.png" alt="Instantaneous temperature field around heated tandem triangular cylinders" loading="lazy">
+            <figcaption>Instantaneous temperature field (300–302 K) for β = 60°, G/B = 3, Re = 120.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cfd-vorticity.png" alt="Instantaneous vorticity field showing vortex shedding behind tandem triangular cylinders" loading="lazy">
+            <figcaption>Instantaneous signed vorticity field (−500 to +500 s⁻¹) showing the vortex street behind the downstream cylinder; β = 60°, G/B = 3, Re = 120.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cfd-velocity.png" alt="Instantaneous velocity magnitude field around tandem triangular cylinders" loading="lazy">
+            <figcaption>Instantaneous velocity magnitude (0–0.766 m/s) for the same configuration.</figcaption>
+          </figure>
+        </div>
+
+        <div class="tags">
+          <span>ANSYS Fluent</span><span>Transient laminar flow</span><span>Vortex shedding</span><span>Nusselt number</span><span>Drag &amp; lift</span>
+        </div>
+      </article>
+
+      <!-- Titanium ML -->
+      <article class="entry" id="titanium">
+        <div class="entry-head">
+          <h2>Interpretable Machine Learning of Room-Temperature Electrical Resistivity and Vickers Hardness in Aged Titanium Alloys: A Literature-Derived Dataset and Resistivity-Assisted Hardness Prediction</h2>
+          <span class="date">2026 – Present</span>
+        </div>
+        <p class="meta">Supervisor: Prof. Dr. Md. Ashraful Islam, Department of Mechanical Engineering, KUET</p>
+        <ul>
+          <li>Digitized property data from figures in published studies and curated a literature-derived dataset of <strong>836</strong> room-temperature electrical-resistivity records and <strong>568</strong> Vickers-hardness records for aged titanium alloys.</li>
+          <li>Trained and evaluated machine-learning models for resistivity and hardness prediction, including resistivity-assisted hardness prediction.</li>
+          <li>Used SHAP to interpret feature effects.</li>
+        </ul>
+        <div class="tags">
+          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Data curation</span>
+        </div>
+      </article>
+
+      <!-- Thesis -->
+      <article class="entry" id="thesis">
+        <div class="entry-head">
+          <h2>Numerical Study on the Heat Transfer Characteristics for Laminar Flow with Staggered Triangular Pin Fin in Arrays</h2>
+          <span class="date">2024 – 2025</span>
+        </div>
+        <p class="meta">Undergraduate Thesis &middot; Supervisor: Prof. Dr. Md. Shahidul Islam, Department of Mechanical Engineering, KUET</p>
+        <ul>
+          <li>Numerically studied laminar-flow heat-transfer enhancement using triangular pin-fin arrays.</li>
+          <li>Performed CFD modeling, solution monitoring, post-processing, and comparison of thermal-hydraulic behavior.</li>
+        </ul>
+
+        <div class="slides" data-count="26" data-path="assets/img/thesis/">
+          <div class="slide-stage">
+            <img class="slide-main" src="assets/img/thesis/slide-01.jpg" alt="Thesis presentation, slide 1">
+          </div>
+          <div class="slide-bar">
+            <span class="slide-label">Thesis presentation &middot; 26 slides</span>
+            <div class="slide-nav">
+              <button type="button" class="slide-prev" aria-label="Previous slide">Previous</button>
+              <span class="slide-count">1 / 26</span>
+              <button type="button" class="slide-next" aria-label="Next slide">Next</button>
+            </div>
+          </div>
+          <div class="slide-thumbs"></div>
+        </div>
+        <div class="tags">
+          <span>CFD</span><span>Pin-fin heat sinks</span><span>Heat-transfer enhancement</span>
+        </div>
+      </article>
+
+      <!-- Project -->
+      <article class="entry" id="project">
+        <div class="entry-head">
+          <h3>Design and Construction of Electricity Generator Shoe Using Kinetic Energy</h3>
+          <span class="date">2023</span>
+        </div>
+        <p class="meta">Undergraduate Engineering Project &middot; Supervisor: Prof. Dr. Zahir Uddin Ahmed, Department of Mechanical Engineering, KUET</p>
+        <p>Designed and built a shoe-mounted generator that harvests kinetic energy from walking and converts it into electrical energy.</p>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>&copy; 2026 Joyanta Roy Chowdhury</span>
+      <span><a href="mailto:joyantaroy019@gmail.com">joyantaroy019@gmail.com</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

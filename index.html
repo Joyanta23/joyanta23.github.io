@@ -1,126 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Research portfolio of Joyanta Roy Chowdhury, mechanical engineering graduate, KUET.">
-<title>Joyanta Roy Chowdhury</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Source+Sans+3:wght@400;600&display=swap">
-<style>
-/* Layout: plain white single column; each project is a short paragraph followed by its slides */
-:root{
-  --bg:#ffffff; --ink:#1d1d1f; --muted:#666a70; --line:#e3e4e6; --accent:#1f4e8c; --soft:#f3f4f6;
-  --display:"Source Serif 4",Georgia,serif;
-  --sans:"Source Sans 3",system-ui,-apple-system,sans-serif;
-  color-scheme:light;
-}
-*,*::before,*::after{box-sizing:border-box}
-img{max-width:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
-.wrap{max-width:800px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.25}
-p{margin:0}
-header.wrap{padding-block:48px 8px;display:grid;gap:4px}
-h1{font-size:clamp(1.9rem,5vw,2.5rem)}
-header p{color:var(--muted)}
-main.wrap{display:grid;gap:56px;padding-block:32px 72px}
-section{display:grid;gap:28px}
-h2{font-size:1.5rem;padding-bottom:8px;border-bottom:1px solid var(--line)}
-.project{display:grid;gap:14px}
-.project + .project{padding-top:36px;border-top:1px solid var(--line)}
-h3{font-size:1.2rem}
-.meta{font-size:.9rem;color:var(--muted)}
-.meta a{color:var(--accent);text-underline-offset:3px}
-.text{max-width:68ch}
-
-.viewer{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:6px}
-.viewer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.stage{position:relative;background:#fff;aspect-ratio:16/9;max-width:100%}
-.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;border-top:1px solid var(--line);background:var(--soft);flex-wrap:wrap}
-.bar .title{font-size:.85rem;color:var(--muted)}
-.ctrls{display:flex;align-items:center;gap:8px}
-.ctrls button{font:600 .85rem var(--sans);background:#fff;color:var(--accent);border:1px solid var(--line);border-radius:6px;padding:5px 14px;cursor:pointer}
-.ctrls button:hover:not(:disabled){border-color:var(--accent)}
-.ctrls button:disabled{opacity:.4;cursor:default}
-.ctrls button:focus-visible,.thumbs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;min-width:4.5em;text-align:center}
-.thumbs{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;border-top:1px solid var(--line);scrollbar-width:thin}
-.thumbs button{flex:0 0 auto;padding:0;border:2px solid transparent;border-radius:4px;background:none;cursor:pointer;line-height:0}
-.thumbs button[aria-current="true"]{border-color:var(--accent)}
-.thumbs img{width:96px;height:54px;object-fit:cover;border-radius:2px;background:#fff;border:1px solid var(--line)}
-
-ul.papers{margin:0;padding-left:1.2em;display:grid;gap:12px}
-ul.papers span{display:block;font-size:.9rem;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyanta Roy Chowdhury</title>
+  <meta name="description" content="Joyanta Roy Chowdhury, Mechanical Engineer (KUET). Research in computational fluid dynamics, convective heat transfer, and machine learning for engineering materials.">
+  <meta property="og:title" content="Joyanta Roy Chowdhury">
+  <meta property="og:description" content="MS/PhD Aspirant | Mechanical Engineer. CFD, heat transfer, and machine learning for engineering materials.">
+  <meta property="og:image" content="https://joyanta23.github.io/assets/img/profile.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231f3a5f'/><text x='32' y='43' font-family='Georgia,serif' font-size='32' font-weight='600' fill='white' text-anchor='middle'>JR</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="wrap">
-  <h1>Joyanta Roy Chowdhury</h1>
-  <p>B.Sc. in Mechanical Engineering, KUET, Bangladesh</p>
-</header>
 
-<main class="wrap">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Joyanta Roy Chowdhury</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills &amp; Awards</a></li>
+      </ul>
+    </div>
+  </header>
 
-<section id="research">
-  <h2>Research</h2>
+  <section class="hero">
+    <div class="container hero-grid">
+      <img class="hero-photo" src="assets/img/profile.jpg" alt="Joyanta Roy Chowdhury">
+      <div>
+        <h1>Joyanta Roy Chowdhury</h1>
+        <p class="tagline">MS/PhD Aspirant &nbsp;|&nbsp; Mechanical Engineer</p>
+        <p class="affiliation">B.Sc. in Mechanical Engineering<br>Khulna University of Engineering &amp; Technology (KUET), Bangladesh</p>
+        <div class="contact-row">
+          <a href="mailto:joyantaroy019@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
+            joyantaroy019@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/joyanta-roy-chowdhury" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/Joyanta23" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3z"/></svg>
+            GitHub
+          </a>
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;color:var(--muted);font-size:0.9rem;">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="width:17px;height:17px;fill:currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Chattogram, Bangladesh
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <article class="project">
-    <h3>Machine learning for aged titanium alloys</h3>
-    <p class="meta">2026 – present · Supervisor: <a href="https://scholar.google.com/citations?user=gedmLOgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Dr. Md. Ashraful Islam</a></p>
-    <p class="text">In this project I wanted to see if we can predict the electrical resistivity and hardness of aged titanium alloys just from their composition and heat treatment. There was no ready-made dataset, so I collected the data myself from aging curves in published papers using WebPlotDigitizer. In the end I had 836 resistivity points and 568 hardness points. I tried eight different ML models, and ExtraTrees worked best for both properties. The part I found most interesting was that giving the model the measured resistivity as an extra input made the hardness predictions quite a bit better, with the error dropping by around 21%. My supervisor is reviewing the manuscript now.</p>
-    <div class="viewer" data-dir="slides-ti" data-n="8" data-pad="1" data-name="Research overview"></div>
-  </article>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="lead">
+          <p>I completed my B.Sc. in Mechanical Engineering at Khulna University of Engineering &amp; Technology (KUET), Bangladesh, in December 2025. I work on two areas: CFD and heat transfer, and machine learning for engineering materials.</p>
+          <p>My undergraduate thesis was a numerical study of laminar-flow heat transfer with triangular pin-fin arrays. I am now running transient CFD simulations in ANSYS Fluent to study the wake and heat transfer of two heated triangular cylinders placed in tandem.</p>
+          <p>I also work on aged titanium alloys. I built a dataset of resistivity and hardness values taken from published studies and trained machine-learning models, including XGBoost, to predict these properties. I use SHAP to see which features drive the predictions.</p>
+        </div>
+      </div>
+    </section>
 
-  <article class="project">
-    <h3>Heat transfer around two triangular cylinders in tandem</h3>
-    <p class="meta">2026 – present · Ongoing</p>
-    <p class="text">This is what I'm working on right now. I'm looking at two heated triangular cylinders placed one behind the other in a channel, and how the front one changes the flow and heat transfer for the one behind it. I run 2D transient simulations in ANSYS Fluent and change the apex angle, the gap between the cylinders and the Reynolds number. I first checked my setup against a published single-cylinder case, and the numbers matched well. Some of the cases are still running, so these results are early.</p>
-    <div class="viewer" data-dir="slides-tandem" data-n="8" data-pad="1" data-name="Research review"></div>
-  </article>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Research Interests</h2>
+        <ul class="chips">
+          <li>Computational Fluid Dynamics</li>
+          <li>Convective Heat Transfer</li>
+          <li>Thermal-Fluid Systems</li>
+          <li>Materials Informatics</li>
+          <li>Machine Learning for Engineering Materials</li>
+          <li>Data-Driven Modeling</li>
+        </ul>
+      </div>
+    </section>
 
-  <article class="project">
-    <h3>Laminar flow heat transfer with staggered triangular pin fins</h3>
-    <p class="meta">2024 – 2025 · Undergraduate thesis · Supervisor: Prof. Dr. Md. Shahidul Islam</p>
-    <p class="text">This was my undergraduate thesis at KUET. I simulated laminar airflow through a staggered array of triangular pin fins in ANSYS Fluent, for Reynolds numbers from 200 to 1000, and compared the results with circular, square, hexagonal and rectangular fins from earlier studies. The triangular fins gave the highest heat transfer, but they also caused a larger pressure drop, so there is a trade-off.</p>
-    <div class="viewer" data-dir="slides-thesis" data-n="26" data-pad="2" data-name="Thesis presentation"></div>
-  </article>
-</section>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Research Highlights</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-thumb" src="assets/img/cfd-temperature.png" alt="Temperature field behind heated tandem triangular cylinders">
+            <p class="kicker">CFD &amp; Heat Transfer</p>
+            <h3>Wake Interference and Heat Transfer of Heated Tandem Triangular Cylinders</h3>
+            <p>2D transient simulations of how apex angle, gap ratio and Reynolds number affect the wake, drag, lift and heat transfer.</p>
+            <a class="more" href="research.html#tandem">Read more &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="kicker">Machine Learning &amp; Materials</p>
+            <h3>Interpretable Machine Learning of Electrical Resistivity and Vickers Hardness in Aged Titanium Alloys</h3>
+            <p>A dataset of 836 resistivity and 568 hardness records collected from published studies, used to train models that predict both properties.</p>
+            <a class="more" href="research.html#titanium">Read more &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="kicker">Undergraduate Thesis</p>
+            <h3>Heat Transfer Characteristics for Laminar Flow with Staggered Triangular Pin Fins in Arrays</h3>
+            <p>Numerical study of laminar-flow heat transfer with triangular pin-fin arrays. Supervisor: Prof. Dr. Md. Shahidul Islam.</p>
+            <a class="more" href="research.html#thesis">Read more &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</main>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>&copy; 2026 Joyanta Roy Chowdhury</span>
+      <span><a href="mailto:joyantaroy019@gmail.com">joyantaroy019@gmail.com</a></span>
+    </div>
+  </footer>
 
-<script>
-document.querySelectorAll('.viewer').forEach(function(v){
-  var N=+v.dataset.n, pad=+v.dataset.pad, dir=v.dataset.dir, name=v.dataset.name, i=0;
-  v.innerHTML='<div class="stage"><img alt=""></div><div class="bar"><span class="title">'+name+' · '+N+' slides</span><div class="ctrls"><button type="button" class="p" aria-label="Previous slide">Previous</button><span class="count" aria-live="polite"></span><button type="button" class="n" aria-label="Next slide">Next</button></div></div><div class="thumbs" aria-label="All slides"></div>';
-  var img=v.querySelector('.stage img'), count=v.querySelector('.count');
-  var prev=v.querySelector('.p'), next=v.querySelector('.n'), thumbs=v.querySelector('.thumbs');
-  function src(k){return dir+'/s-'+String(k+1).padStart(pad,'0')+'.jpg'}
-  var tb=[];
-  for(var k=0;k<N;k++){
-    var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Slide '+(k+1));
-    var t=document.createElement('img'); t.src=src(k); t.alt=''; t.loading='lazy'; b.appendChild(t);
-    (function(k){b.addEventListener('click',function(){go(k)})})(k);
-    thumbs.appendChild(b); tb.push(b);
-  }
-  function go(k){
-    i=Math.max(0,Math.min(N-1,k));
-    img.src=src(i); img.alt=name+', slide '+(i+1)+' of '+N;
-    count.textContent=(i+1)+' / '+N; prev.disabled=i===0; next.disabled=i===N-1;
-    tb.forEach(function(b,j){b.setAttribute('aria-current',j===i?'true':'false')});
-    var c=tb[i]; thumbs.scrollTo({left:c.offsetLeft-thumbs.clientWidth/2+c.clientWidth/2});
-  }
-  prev.addEventListener('click',function(){go(i-1)});
-  next.addEventListener('click',function(){go(i+1)});
-  v.tabIndex=0;
-  v.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(i+1);e.preventDefault()} if(e.key==='ArrowLeft'){go(i-1);e.preventDefault()}});
-  var x0=null, st=v.querySelector('.stage');
-  st.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
-  st.addEventListener('touchend',function(e){if(x0===null)return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40)go(i+(dx<0?1:-1)); x0=null});
-  go(0);
-});
-</script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
