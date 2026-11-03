@@ -50,12 +50,13 @@
           <h2>Wake Interference and Heat Transfer of Heated Tandem Triangular Cylinders: Effects of Apex Angle, Gap Ratio, and Reynolds Number</h2>
           <span class="date">2026 – Present</span>
         </div>
-        <p class="meta">Computational Fluid Dynamics &middot; Convective Heat Transfer</p>
-        <ul>
-          <li>Conducting two-dimensional transient CFD simulations of two heated triangular cylinders arranged in tandem inside a channel, using ANSYS Fluent 2023 R1.</li>
-          <li>Studying the coupled influence of apex angle, cylinder spacing, and Reynolds number on wake behavior, drag, lift, and heat transfer.</li>
-          <li>Established stable periodic simulations and time-averaging workflows for the upstream and downstream Nusselt numbers and force coefficients, supported by mesh- and time-step-independence studies and comparison with a published single-cylinder benchmark.</li>
-        </ul>
+        <p class="meta">Independent CFD study · Manuscript submitted</p>
+        <p>I used transient simulations in ANSYS Fluent to study how the wake of the first heated triangular cylinder changes heat transfer and fluid forces on the second.</p>
+        <aside style="margin:1rem 0;padding:1rem;border:1px solid #83978f;border-radius:12px;background:#f0f6f3;color:#173b34">
+          <p><strong>Higher Nusselt number did not mean more total heat transfer.</strong></p>
+          <p>At G/B = 3 and Re = 120, the 90° cylinder had the highest mean Nusselt number at both positions among the three angles tested. The 30° cylinder transferred the most heat per unit depth at both positions because it had a longer heated perimeter at the same width.</p>
+        </aside>
+        <p>See also my <a href="#thesis">undergraduate CFD thesis on staggered triangular pin-fin arrays</a>.</p>
 
         <div class="param-row">
           <div class="param"><div class="label">Apex angle, β</div><div class="value">30°, 60°, 90°</div></div>
@@ -63,6 +64,7 @@
           <div class="param"><div class="label">Reynolds number, Re</div><div class="value">80 – 160</div></div>
         </div>
 
+        <details style="margin:1rem 0"><summary style="cursor:pointer;font-weight:600">View temperature, vorticity, and velocity fields</summary>
         <div class="figures">
           <figure>
             <img src="assets/img/cfd-temperature.png" alt="Instantaneous temperature field around heated tandem triangular cylinders" loading="lazy">
@@ -78,10 +80,12 @@
           </figure>
         </div>
 
+        </details>
         <div class="tags">
           <span>ANSYS Fluent</span><span>Transient laminar flow</span><span>Vortex shedding</span><span>Nusselt number</span><span>Drag &amp; lift</span>
         </div>
 
+        <details style="margin:1rem 0"><summary style="cursor:pointer;font-weight:600">View full CFD presentation · 33 slides</summary>
         <div class="slides" data-count="33" data-path="assets/img/tandem/" data-title="Tandem cylinders presentation">
           <div class="slide-stage">
             <img class="slide-main" src="assets/img/tandem/slide-01.jpg" alt="Tandem cylinders presentation, slide 1">
@@ -96,6 +100,7 @@
           </div>
           <div class="slide-thumbs"></div>
         </div>
+        </details>
       </article>
 
       <!-- Titanium ML -->
@@ -148,10 +153,8 @@
           <span class="date">2024 – 2025</span>
         </div>
         <p class="meta">Undergraduate Thesis &middot; Supervisor: Prof. Dr. Md. Shahidul Islam, Department of Mechanical Engineering, KUET</p>
-        <ul>
-          <li>Numerically studied laminar-flow heat-transfer enhancement using triangular pin-fin arrays.</li>
-          <li>Performed CFD modeling, solution monitoring, post-processing, and comparison of thermal-hydraulic behavior.</li>
-        </ul>
+        <p>For my KUET thesis, I used CFD to compare laminar heat transfer and flow behavior in staggered arrays of triangular pin fins. My work included setting up the simulations, monitoring the solutions, and comparing the thermal and flow results.</p>
+        <p>The <a href="#tandem">tandem-cylinder study</a> asks a related question at the scale of two bodies: how does the first cylinder’s wake affect the second?</p>
 
         <div class="slides" data-count="26" data-path="assets/img/thesis/" data-title="Thesis presentation">
           <div class="slide-stage">
