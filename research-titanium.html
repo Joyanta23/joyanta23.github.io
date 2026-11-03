@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titanium Alloy Machine Learning | Joyanta Roy Chowdhury</title>
+  <meta name="description" content="Predicting resistivity and hardness from alloy chemistry and aging conditions.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231f3a5f'/><text x='32' y='43' font-family='Georgia,serif' font-size='32' font-weight='600' fill='white' text-anchor='middle'>JR</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+<style>
+#titanium details > summary { display:flex; align-items:center; justify-content:space-between; gap:1rem; width:fit-content; max-width:100%; margin:.65rem 0; padding:.55rem .9rem; border:1px solid #15695a; border-radius:8px; background:#eef6f2; color:#173b34; font-weight:650; cursor:pointer; list-style:none; }
+#titanium details > summary::-webkit-details-marker { display:none; }
+#titanium details > summary::after { content:"+"; font-size:1.2em; line-height:1; }
+#titanium details[open] > summary::after { content:"−"; }
+#titanium details > summary:hover { background:#dceee6; }
+#titanium details > summary:focus-visible { outline:2px solid #15695a; outline-offset:3px; }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Joyanta Roy Chowdhury</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills &amp; Awards</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div class="container">
+      <h1>Titanium Alloy Machine Learning</h1>
+      <p>Computational fluid dynamics, convective heat transfer, and machine learning for engineering materials</p>
+    </div>
+  </div>
+
+  <main class="section research-list">
+    <div class="container">
+
+      <p><a href="research.html">← All research</a></p>
+<article class="entry" id="titanium">
+        <div class="entry-head">
+          <h2>Machine Learning Prediction of Resistivity and Hardness in Isothermally Aged β Titanium Alloys: Added Value of Measured Resistivity</h2>
+          <span class="date">2026 – Present</span>
+        </div>
+        <p class="meta">Supervisor: Prof. Dr. Md. Ashraful Islam (<a href="https://scholar.google.es/citations?hl=en&amp;user=gedmLOgAAAAJ">Google Scholar</a>), Department of Mechanical Engineering, KUET</p>
+        <p>I digitized published aging curves and assembled <strong>836 resistivity records</strong> and <strong>568 hardness records</strong>, including <strong>349 matched aging conditions</strong>.</p>
+        <figure style="margin:1rem 0;padding:1rem;border:1px solid #83978f;border-radius:12px;background:#f0f6f3;color:#173b34">
+          <figcaption><strong>21.5% lower hardness test RMSE</strong></figcaption>
+          <p>Adding measured resistivity improved hardness prediction on the same 70 test rows using separately tuned ExtraTrees models.</p>
+          <div>Without resistivity <strong>24.38 HV</strong></div>
+          <div aria-hidden="true" style="height:.7rem;width:100%;background:#7b9189;border-radius:4px;margin:.3rem 0 .8rem"></div>
+          <div>With measured resistivity <strong>19.13 HV</strong></div>
+          <div aria-hidden="true" style="height:.7rem;width:78.47%;background:#15695a;border-radius:4px;margin:.3rem 0"></div>
+        </figure>
+        <details>
+          <summary>Methods and model results</summary>
+          <p>I matched measurements by alloy and processing conditions, selected models by five-fold cross-validation on training rows, and evaluated them on held-out rows. ExtraTrees achieved test R² of 0.9640 for resistivity and 0.9703 for hardness. I used SHAP to examine how inputs contributed to the model predictions.</p>
+        </details>
+        <div class="tags">
+          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Data curation</span>
+        </div>
+
+        <details style="margin-top:1rem">
+          <summary>View slides · 8 slides</summary>
+        <div class="slides" data-count="8" data-path="assets/img/titanium/" data-title="Titanium alloys presentation">
+          <div class="slide-stage">
+            <img class="slide-main" src="assets/img/titanium/slide-01.jpg" alt="Titanium alloys presentation, slide 1">
+          </div>
+          <div class="slide-bar">
+            <span class="slide-label">Research presentation &middot; 8 slides</span>
+            <div class="slide-nav">
+              <button type="button" class="slide-prev" aria-label="Previous slide">Previous</button>
+              <span class="slide-count">1 / 8</span>
+              <button type="button" class="slide-next" aria-label="Next slide">Next</button>
+            </div>
+          </div>
+          <div class="slide-thumbs"></div>
+        </div>
+        </details>
+      </article>
+      <nav aria-label="Related research"><p><a href="research-tandem.html">Tandem Cylinder CFD</a></p><p><a href="research-thesis.html">Undergraduate CFD Thesis</a></p></nav>
+
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>&copy; 2026 Joyanta Roy Chowdhury</span>
+      <span><a href="mailto:joyantaroy019@gmail.com">joyantaroy019@gmail.com</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
