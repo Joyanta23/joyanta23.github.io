@@ -44,135 +44,22 @@
   <main class="section research-list">
     <div class="container">
 
-      <!-- Tandem cylinders -->
       <article class="entry" id="tandem">
-        <div class="entry-head">
-          <h2>Wake Interference and Heat Transfer of Heated Tandem Triangular Cylinders: Effects of Apex Angle, Gap Ratio, and Reynolds Number</h2>
-          <span class="date">2026 – Present</span>
-        </div>
-        <p class="meta">Independent CFD study · Manuscript submitted</p>
-        <p>I used transient simulations in ANSYS Fluent to study how the wake of the first heated triangular cylinder changes heat transfer and fluid forces on the second.</p>
-        <aside style="margin:1rem 0;padding:1rem;border:1px solid #83978f;border-radius:12px;background:#f0f6f3;color:#173b34">
-          <p><strong>Higher Nusselt number did not mean more total heat transfer.</strong></p>
-          <p>At G/B = 3 and Re = 120, the 90° cylinder had the highest mean Nusselt number at both positions among the three angles tested. The 30° cylinder transferred the most heat per unit depth at both positions because it had a longer heated perimeter at the same width.</p>
-        </aside>
-        <p>See also my <a href="#thesis">undergraduate CFD thesis on staggered triangular pin-fin arrays</a>.</p>
-
-        <div class="param-row">
-          <div class="param"><div class="label">Apex angle, β</div><div class="value">30°, 60°, 90°</div></div>
-          <div class="param"><div class="label">Gap ratio, G/B</div><div class="value">1, 3, 5</div></div>
-          <div class="param"><div class="label">Reynolds number, Re</div><div class="value">80 – 160</div></div>
-        </div>
-
-        <details style="margin:1rem 0"><summary style="cursor:pointer;font-weight:600">View temperature, vorticity, and velocity fields</summary>
-        <div class="figures">
-          <figure>
-            <img src="assets/img/cfd-temperature.png" alt="Instantaneous temperature field around heated tandem triangular cylinders" loading="lazy">
-            <figcaption>Instantaneous temperature field (300–302 K) for β = 60°, G/B = 3, Re = 120.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/img/cfd-vorticity.png" alt="Instantaneous vorticity field showing vortex shedding behind tandem triangular cylinders" loading="lazy">
-            <figcaption>Instantaneous signed vorticity field (−500 to +500 s⁻¹) showing the vortex street behind the downstream cylinder; β = 60°, G/B = 3, Re = 120.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/img/cfd-velocity.png" alt="Instantaneous velocity magnitude field around tandem triangular cylinders" loading="lazy">
-            <figcaption>Instantaneous velocity magnitude (0–0.766 m/s) for the same configuration.</figcaption>
-          </figure>
-        </div>
-
-        </details>
-        <div class="tags">
-          <span>ANSYS Fluent</span><span>Transient laminar flow</span><span>Vortex shedding</span><span>Nusselt number</span><span>Drag &amp; lift</span>
-        </div>
-
-        <details style="margin:1rem 0"><summary style="cursor:pointer;font-weight:600">View full CFD presentation · 33 slides</summary>
-        <div class="slides" data-count="33" data-path="assets/img/tandem/" data-title="Tandem cylinders presentation">
-          <div class="slide-stage">
-            <img class="slide-main" src="assets/img/tandem/slide-01.jpg" alt="Tandem cylinders presentation, slide 1">
-          </div>
-          <div class="slide-bar">
-            <span class="slide-label">Research presentation &middot; 33 slides</span>
-            <div class="slide-nav">
-              <button type="button" class="slide-prev" aria-label="Previous slide">Previous</button>
-              <span class="slide-count">1 / 33</span>
-              <button type="button" class="slide-next" aria-label="Next slide">Next</button>
-            </div>
-          </div>
-          <div class="slide-thumbs"></div>
-        </div>
-        </details>
+        <h2><a href="research-tandem.html">Tandem Cylinder CFD</a></h2>
+        <p>Transient flow, wake interference, and heat transfer around two heated triangular cylinders.</p>
+        <p><a href="research-tandem.html">View project →</a></p>
       </article>
 
-      <!-- Titanium ML -->
       <article class="entry" id="titanium">
-        <div class="entry-head">
-          <h2>Machine Learning Prediction of Resistivity and Hardness in Isothermally Aged β Titanium Alloys: Added Value of Measured Resistivity</h2>
-          <span class="date">2026 – Present</span>
-        </div>
-        <p class="meta">Supervisor: Prof. Dr. Md. Ashraful Islam (<a href="https://scholar.google.es/citations?hl=en&amp;user=gedmLOgAAAAJ">Google Scholar</a>), Department of Mechanical Engineering, KUET</p>
-        <p>I digitized published aging curves and assembled <strong>836 resistivity records</strong> and <strong>568 hardness records</strong>, including <strong>349 matched aging conditions</strong>.</p>
-        <figure style="margin:1rem 0;padding:1rem;border:1px solid #83978f;border-radius:12px;background:#f0f6f3;color:#173b34">
-          <figcaption><strong>21.5% lower hardness test RMSE</strong></figcaption>
-          <p>Adding measured resistivity improved hardness prediction on the same 70 test rows using separately tuned ExtraTrees models.</p>
-          <div>Without resistivity <strong>24.38 HV</strong></div>
-          <div aria-hidden="true" style="height:.7rem;width:100%;background:#7b9189;border-radius:4px;margin:.3rem 0 .8rem"></div>
-          <div>With measured resistivity <strong>19.13 HV</strong></div>
-          <div aria-hidden="true" style="height:.7rem;width:78.47%;background:#15695a;border-radius:4px;margin:.3rem 0"></div>
-        </figure>
-        <details>
-          <summary>Methods and model results</summary>
-          <p>I matched measurements by alloy and processing conditions, selected models by five-fold cross-validation on training rows, and evaluated them on held-out rows. ExtraTrees achieved test R² of 0.9640 for resistivity and 0.9703 for hardness. I used SHAP to examine how inputs contributed to the model predictions.</p>
-        </details>
-        <div class="tags">
-          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Data curation</span>
-        </div>
-
-        <details style="margin-top:1rem">
-          <summary>View slides · 8 slides</summary>
-        <div class="slides" data-count="8" data-path="assets/img/titanium/" data-title="Titanium alloys presentation">
-          <div class="slide-stage">
-            <img class="slide-main" src="assets/img/titanium/slide-01.jpg" alt="Titanium alloys presentation, slide 1">
-          </div>
-          <div class="slide-bar">
-            <span class="slide-label">Research presentation &middot; 8 slides</span>
-            <div class="slide-nav">
-              <button type="button" class="slide-prev" aria-label="Previous slide">Previous</button>
-              <span class="slide-count">1 / 8</span>
-              <button type="button" class="slide-next" aria-label="Next slide">Next</button>
-            </div>
-          </div>
-          <div class="slide-thumbs"></div>
-        </div>
-        </details>
+        <h2><a href="research-titanium.html">Titanium Alloy Machine Learning</a></h2>
+        <p>Predicting resistivity and hardness from alloy chemistry and aging conditions.</p>
+        <p><a href="research-titanium.html">View project →</a></p>
       </article>
 
-      <!-- Thesis -->
       <article class="entry" id="thesis">
-        <div class="entry-head">
-          <h2>Numerical Study on the Heat Transfer Characteristics for Laminar Flow with Staggered Triangular Pin Fin in Arrays</h2>
-          <span class="date">2024 – 2025</span>
-        </div>
-        <p class="meta">Undergraduate Thesis &middot; Supervisor: Prof. Dr. Md. Shahidul Islam, Department of Mechanical Engineering, KUET</p>
-        <p>For my KUET thesis, I used CFD to compare laminar heat transfer and flow behavior in staggered arrays of triangular pin fins. My work included setting up the simulations, monitoring the solutions, and comparing the thermal and flow results.</p>
-        <p>The <a href="#tandem">tandem-cylinder study</a> asks a related question at the scale of two bodies: how does the first cylinder’s wake affect the second?</p>
-
-        <div class="slides" data-count="26" data-path="assets/img/thesis/" data-title="Thesis presentation">
-          <div class="slide-stage">
-            <img class="slide-main" src="assets/img/thesis/slide-01.jpg" alt="Thesis presentation, slide 1">
-          </div>
-          <div class="slide-bar">
-            <span class="slide-label">Thesis presentation &middot; 26 slides</span>
-            <div class="slide-nav">
-              <button type="button" class="slide-prev" aria-label="Previous slide">Previous</button>
-              <span class="slide-count">1 / 26</span>
-              <button type="button" class="slide-next" aria-label="Next slide">Next</button>
-            </div>
-          </div>
-          <div class="slide-thumbs"></div>
-        </div>
-        <div class="tags">
-          <span>CFD</span><span>Pin-fin heat sinks</span><span>Heat-transfer enhancement</span>
-        </div>
+        <h2><a href="research-thesis.html">Undergraduate CFD Thesis</a></h2>
+        <p>Laminar heat transfer in staggered arrays of triangular pin fins.</p>
+        <p><a href="research-thesis.html">View project →</a></p>
       </article>
 
       <!-- Project -->
