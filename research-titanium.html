@@ -53,8 +53,8 @@
         <p class="meta">Supervisor: Prof. Dr. Md. Ashraful Islam (<a href="https://scholar.google.es/citations?hl=en&amp;user=gedmLOgAAAAJ">Google Scholar</a>), Department of Mechanical Engineering, KUET</p>
         <p>I digitized published aging curves and assembled <strong>836 resistivity records</strong> and <strong>568 hardness records</strong>, including <strong>349 matched aging conditions</strong>.</p>
         <figure style="margin:1rem 0;padding:1rem;border:1px solid #83978f;border-radius:12px;background:#f0f6f3;color:#173b34">
-          <figcaption><strong>21.5% lower hardness test RMSE</strong></figcaption>
-          <p>Adding measured resistivity improved hardness prediction on the same 70 test rows using separately tuned ExtraTrees models.</p>
+          <figcaption><strong>21.5% lower hardness prediction error</strong></figcaption>
+          <p>On the same 70 test cases, an ExtraTrees model given measured electrical resistivity predicted hardness more accurately than a separately tuned ExtraTrees model using chemistry and aging conditions alone. Error is reported as root mean squared error (RMSE) in Vickers hardness units (HV).</p>
           <div>Without resistivity <strong>24.38 HV</strong></div>
           <div aria-hidden="true" style="height:.7rem;width:100%;background:#7b9189;border-radius:4px;margin:.3rem 0 .8rem"></div>
           <div>With measured resistivity <strong>19.13 HV</strong></div>
@@ -65,7 +65,7 @@
           <p>I matched measurements by alloy and processing conditions, selected models by five-fold cross-validation on training rows, and evaluated them on held-out rows. ExtraTrees achieved test R² of 0.9640 for resistivity and 0.9703 for hardness. I used SHAP to examine how inputs contributed to the model predictions.</p>
         </details>
         <div class="tags">
-          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Data curation</span>
+          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>ExtraTrees</span><span>SHAP</span><span>Data curation</span>
         </div>
 
         <details style="margin-top:1rem">
