@@ -526,7 +526,6 @@ figcaption {
 
 .research-list { background: var(--bg-soft); }
 
-/* Keep links in body copy recognizable without hover. */
 main p a:not(.research-button),
 main dd a {
   text-decoration: underline;
